@@ -207,6 +207,18 @@ a {
     outline: 0;
 }
 
+html .cog-branding, :root:root:root:root:root .cog-branding {
+    font-family: Lato,sans-serif;
+    font-size: 16px !important;
+    font-weight: bold;
+    display: none;
+}
+
+#copyright {
+    font-size: 1rem;
+    color: #504e50;
+    font-weight: bold;
+}
 @media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
