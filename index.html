@@ -2,173 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katia Barroso - Developer</title>
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-32x32.png">
-    <link rel="manifest" href="/site.webmanifest">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e0fbe9db39.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+
 </head>
 
 <body>
-    <!-- Script -->
-    <script src="script.js"></script>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="navbar_container">
-            <img src="/KB Logotransparent.png" class="logoimg">
-            <div class="navbar_toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-
-                <ul class="navbar_menu">
-                    <li class="navbar_item">
-                        <a href="#home" class="navbar_links">Home</a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="#about" class="navbar_links">About </a>
-                    </li>
-                    <li class="navbar_item">
-                        <a href="#projects" class="navbar_links">Projects</a>
-                    </li>
-                                        <li class="navbar_item">
-                        <a href="#contact" class="navbar_links">Contact</a>
-                    </li>
-                </ul>
+    <section class="hero">
+        <nav>
+            <img class="logo" src="/src/images/KB logo2.png" alt="K.B. Logo" />
+            <ul class="nav-list">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#aboutme">About</a></li>
+                <li><a href="#projects"> Projects </a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <div class="hero-area" id="hero">
+            <div class="hero-text">
+                <h1>Katia Barroso</h1>
+                <p>Front End Developer</p>
+                <div class="button"><a href="#aboutme">About Me</a></div>
             </div>
         </div>
-    </nav>
+    </section>
 
+    <section class="subsec" id="aboutme">
+        <div class="info">
+            <h2>About Me</h2>
+            <P>Hello. My name is Katia Barroso. I am an aspiring Front End Developer with a background in Education.
+            </P>
 
-    <!-- Hero Section -->
-
-    <div class="hero" id="home">
-        <div class="hero_container">
-            <h1 class="hero_heading">Hi!</h1>
-            <p class="hero_description">Nice of you to join us</p>
-            <h3>I'm Katia, an aspiring web developer and designer.</h3>
         </div>
 
-    </div>
+    </section>
 
-    <!-- About -->
-    <div class="about" id="about">
-        <div class="about_container">
-            <h1 class="aboutheader">About Me</h1>
-            <img src="/girlback.jpg" class="aboutimg">
-            <p class="aboutdesc">Quis eiusmod anim qui aliqua aute cillum minim nulla. Cillum officia proident veniam
-                nulla in officia dolor occaecat proident. Magna eiusmod do ullamco excepteur dolor dolor. Officia ad non
-                sunt anim irure culpa adipisicing duis esse et. Ea amet ipsum aute exercitation sint deserunt amet quis
-                sit. Cillum nostrud voluptate veniam sunt ipsum. Eu eu nulla irure deserunt voluptate tempor sunt.</p>
-            <button class="resumebtn">Resume</button>
-        </div>
-    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <main id="projects">
-
-        <h1 class="projecthead">Projects</h1>
-        <!-- Cards -->
-        <!-- Project 4 -->
-        <div class="card" id="project4">
-            <img src="/coderpexels.jpg" alt="coder girl">
-
-            <div class="card_details">
-                <span class="tag">JavaScript</span>
-                <span class="tag">Html</span>
-                <span class="tag">CSS</span>
-                <div class="name"> Project Name 4</div>
-                <!-- Keep description less than 180 characters -->
-                <p>Project description goes here</p>
-
-                <button class="live_view">See Live</button>
-                <button class="code">Source Code</button>
-
-
+    <section class="subsec-alt" id="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img class="project-img" src="/src/images/coderpexels.jpg" alt="project image" />
+                <h3>Project 1</h3>
+                <p class="subtext"> This is my project and some information about it.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" target="_blank" href="https://www.github.com/kbl91">View
+                        here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="/src/images/coderpexels.jpg" alt="project image" />
+                <h3>Project 2</h3>
+                <p class="subtext"> This is my project and some information about it.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" target="_blank" href="https://www.github.com/kbl91">View
+                        here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="/src/images/coderpexels.jpg" alt="project image" />
+                <h3>Project 3</h3>
+                <p class="subtext"> This is my project and some information about it.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" target="_blank" href="https://www.github.com/kbl91">View
+                        here</a></p>
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="/src/images/coderpexels.jpg" alt="project image" />
+                <h3>Project 4</h3>
+                <p class="subtext"> This is my project and some information about it.</p>
+                <hr />
+                <p class="subtext"><a class="project-link" target="_blank" href="https://www.github.com/kbl91">View
+                        here</a></p>
             </div>
         </div>
+    </section>
+    <footer id="contact">
+        <h3>Contact Me</h3>
+    </footer>
 
-        <!-- Project 3 -->
-        <div class="card" id="project3">
-            <img src="/coderpexels.jpg" alt="coder girl">
-
-            <div class="card_details">
-                <span class="tag">JavaScript</span>
-                <span class="tag">Html</span>
-                <span class="tag">CSS</span>
-                <div class="name"> Project Name 3</div>
-                <!-- Keep description less than 180 characters -->
-                <p>Project description goes here</p>
-
-                <button class="live_view">See Live</button>
-                <button class="code">Source Code</button>
-
-
-            </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="card" id="project2">
-            <img src="/Quote Generator.png" alt="quote generator">
-
-            <div class="card_details">
-                <span class="tag">JavaScript</span>
-                <span class="tag">Html</span>
-                <span class="tag">CSS</span>
-                <span class="tag">API</span>
-                <div class="name"> Quote Generator</div>
-                <!-- Keep description less than 180 characters -->
-                <p>This was my first project using JavaScript. It was quite a challenge but it really helped me
-                    understand and put to use the things I've learned over the past few months.</I></p>
-                <a href="https://kbl91.github.io/QuoteGenerator/" target="_blank">
-                    <button class="live_view">See Live</button>
-                </a>
-                <a href="https://github.com/kbl91/QuoteGenerator.git" target="_blank">
-                    <button class="code">Source Code</button>
-                </a>
-
-            </div>
-        </div>
-
-        <!-- Project 1 -->
-        <div class="card" id="project1">
-            <img src="/QRchallenge.png" alt="Front End Mentor QRchallenge">
-
-            <div class="card_details">
-                <span class="tag">Html</span>
-                <span class="tag">CSS</span>
-                <span class="tag">Frontend Mentor</span>
-                <div class="name"> QR Code Component</div>
-                <!-- Keep description less than 180 characters -->
-                <p>One of my very first projects. I decided to dive into this after I learned very basic HTML and CSS.
-                    At the time it wasn't easy, but I'm proud of the outcome. </p>
-                <a href="https://kbl91.github.io/QR-Code-Component-Challenge/" target="_blank">
-                    <button class="live_view">See Live</button>
-                </a>
-                <a href="https://github.com/kbl91/QR-Code-Component-Challenge.git" target="_blank">
-                    <button class="code">Source Code</button>
-                </a>
-
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Footer -->
+    <script src="/src/script.js"></script>
 </body>
 
 </html>
