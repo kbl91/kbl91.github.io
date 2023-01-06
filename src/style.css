@@ -55,7 +55,8 @@ nav {
 
 .logo {
     height: 100px;
-    margin: 30px;
+    margin: 15px;
+    margin-left: 25px;
 }
 
 ul {
@@ -64,7 +65,9 @@ ul {
     width: 500px;
     justify-content: space-around;
     font-size: 30px;
+    margin-right: 15px;
 }
+
 
 li {
     text-decoration: none;
@@ -94,7 +97,7 @@ p {
 }
 
 h3 {
-    color:#8e8797;
+    color: #8e8797;
 }
 
 .subtext {
@@ -217,6 +220,7 @@ a {
 
     ul {
         display: none;
+        background-color: #2b2c38;
         margin: 0px;
     }
 
