@@ -154,10 +154,10 @@ h2 {
 
 .project-card {
     width: 300px;
-    height: 350px;
     box-shadow: 5px 5px 20px #7f8c9b;
     background-color: #382a40;
-    margin: 10px;
+    margin: 5px;
+    max-height: 600px;
 }
 
 .project-container {
@@ -175,7 +175,9 @@ h2 {
 .project-img {
     margin-top: 25px;
     width: 200px;
-    border-radius: 150px;
+    max-height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
 }
 
 hr {
@@ -207,8 +209,9 @@ a {
     outline: 0;
 }
 
-html .cog-branding, :root:root:root:root:root .cog-branding {
-    font-family: Lato,sans-serif;
+html .cog-branding,
+:root:root:root:root:root .cog-branding {
+    font-family: Lato, sans-serif;
     font-size: 16px !important;
     font-weight: bold;
     display: none;
@@ -219,6 +222,7 @@ html .cog-branding, :root:root:root:root:root .cog-branding {
     color: #504e50;
     font-weight: bold;
 }
+
 @media only screen and (max-width: 1000px) {
     .hamburger {
         display: block;
